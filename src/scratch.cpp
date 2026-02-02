@@ -1,3 +1,8 @@
-//
-// Created by acer on 02-02-2026.
-//
+#include <Arduino.h>
+#define irPin 2
+void setup() {
+
+}
+void loop() {
+
+}
