@@ -1,8 +1,16 @@
 #include <Arduino.h>
+#define irPin 2
 void setup() {
-// write your initialization code here
+    pinMode(irPin,INPUT);
 }
 
 void loop() {
-// write your code here
+    int irValue=digitalRead(irPin);
+    if (irValue == HIGH) {
+        Serial.println("IR Sensor: No Obstacle");
+    }
+    else {
+        Serial.println("Ir Sensor: Obstacle Detected4h");
+    }
+    delay(500);
 }
